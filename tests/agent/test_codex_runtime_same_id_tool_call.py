@@ -1,7 +1,3 @@
-# This test must pass on the unmodified codecrc (before the fix) and document
-# the exact regression: a single Responses function_call surfaced as two
-# same-id items (one with arguments, one with empty ``{}``) was executed twice,
-# emitting an empty-argument tool call that ran with default/no args.
 """Regression: same-id function_call must yield exactly one tool call.
 
 luna/sol responses can announce a function_call through multiple same-id events
